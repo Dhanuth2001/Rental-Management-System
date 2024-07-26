@@ -9,4 +9,10 @@ public interface RentalService {
     List<Rental> getAllRentals();
 
     void addRental(Rental rental);
+
+    Rental getRentalById(Long id);
+
+    void updateRental(Rental rental);
+
+    void deleteRental(Long id);
 }

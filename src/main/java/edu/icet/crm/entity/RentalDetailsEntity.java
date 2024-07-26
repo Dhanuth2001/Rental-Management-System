@@ -12,8 +12,9 @@ import lombok.RequiredArgsConstructor;
 public class RentalDetailsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long rentDetailID;
     private Long rentID;
-    private String itemID;
+    private Long itemID;
     private Double totalItemCost;
     private Integer qty;
 }

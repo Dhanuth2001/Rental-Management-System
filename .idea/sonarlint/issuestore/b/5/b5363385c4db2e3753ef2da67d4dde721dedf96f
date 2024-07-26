@@ -1,0 +1,9 @@
+
+¦
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "rental".(ËŠ¡ ûÿÿÿÿ8„­åñ2J$a9206341-05f0-4a96-9d06-288662abe3c6
+{
+java:S1128"8Remove this unused import 'edu.icet.crm.model.Customer'.(Ó¼â¢8¤ÜÉö2J$86b7ab42-7ed7-4213-8e42-83672d2b0b88
+
+java:S1128"<Remove this unused import 'edu.icet.crm.model.HardwareItem'.(»²Ğå8¥ÜÉö2J$6b5b4b3d-5326-4da8-85da-b1a8ef74782c
+
+java:S1128"ERemove this unused import 'edu.icet.crm.service.HardwareItemService'.(¡â¥áşÿÿÿÿ8¥ÜÉö2J$8685aa49-d28f-4114-ac57-2d1a89882e63

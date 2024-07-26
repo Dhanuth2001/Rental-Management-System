@@ -11,4 +11,8 @@ public interface RentalDetailsService {
     void addRentalDetails(RentalDetails rentalDetails);
 
     RentalDetails getRentalDetailById(Long id);
+
+    void updateRentalDetails(RentalDetails rentalDetails);
+
+    void deleteRentalDetail(Long id);
 }

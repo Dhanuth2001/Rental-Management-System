@@ -15,6 +15,7 @@ public class RentalEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long rentID;
+    private Long customerID;
     private Date rentalDate;
     private Date expectedReturnDate;
     private Date returnedDate;

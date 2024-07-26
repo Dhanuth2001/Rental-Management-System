@@ -1,8 +1,6 @@
 package edu.icet.crm.model;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import java.util.Date;
 
@@ -11,6 +9,7 @@ import java.util.Date;
 
 public class Rental {
     private Long rentID;
+    private Long customerID;
     private Date rentalDate;
     private Date expectedReturnDate;
     private Date returnedDate;

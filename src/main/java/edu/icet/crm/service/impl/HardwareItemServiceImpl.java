@@ -9,10 +9,14 @@ import edu.icet.crm.repository.CustomerRepository;
 import edu.icet.crm.repository.HarwareItemRepository;
 import edu.icet.crm.service.HardwareItemService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 @RequiredArgsConstructor
 @Service
 public class HardwareItemServiceImpl implements HardwareItemService {
@@ -40,17 +44,27 @@ public class HardwareItemServiceImpl implements HardwareItemService {
 
     @Override
     public void updateItem(HardwareItem item) {
-
+        if(harwareItemRepository.existsById(item.getItemID())){
+            HardwareItemEntity hardwareItemEntity = convertToEntity(item);
+            harwareItemRepository.save(hardwareItemEntity);
+        }
     }
 
     @Override
     public void deleteItem(Long id) {
+        if(harwareItemRepository.existsById(id)){
 
+            harwareItemRepository.deleteById(id);
+        }
     }
 
     @Override
     public HardwareItem getItemById(Long id) {
-        return null;
+        Optional<HardwareItemEntity> optionalHardwareItemEntity = harwareItemRepository.findById(id);
+        if (optionalHardwareItemEntity.isEmpty()) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Item with ID " + id + " not found");
+        }
+        return convertToModel(optionalHardwareItemEntity.get());
     }
 
     private HardwareItemEntity convertToEntity(HardwareItem item) {

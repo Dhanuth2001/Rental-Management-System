@@ -1,0 +1,15 @@
+
+z
+java:S25892"7Remove this expression which always evaluates to "true"(éþÄ¡8Ç›…óŽ2J$54994869-4374-46c9-b7f4-944d887ff6a7
+½
+java:S21592"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(éþÄ¡8¥úòñŽ2J$539e2a04-8ca3-4dbc-b422-8e7234120768
+‚
+java:S1128"?Remove this unused import 'edu.icet.crm.entity.CustomerEntity'.(ÞÐâÂ8â›…óŽ2J$cbf92a4c-f742-4f2c-a2a5-fd6fa7c66689
+†
+java:S1128"CRemove this unused import 'edu.icet.crm.entity.HardwareItemEntity'.(ý‰Þä8ã›…óŽ2J$e5bfc1e3-57a0-4c36-9ef2-068b5a5c532e
+
+java:S1128"<Remove this unused import 'edu.icet.crm.model.HardwareItem'.(»²Ðå8ã›…óŽ2J$a13e9014-8cb3-4c8d-88fd-65e83c46fbf3
+
+java:S1128	"JRemove this unused import 'edu.icet.crm.repository.HarwareItemRepository'.(Ý¥›í8ã›…óŽ2J$23aaaa2e-9981-4719-bd86-38a0cee9b793
+
+java:S1128"ERemove this unused import 'edu.icet.crm.service.HardwareItemService'.(¡â¥áþÿÿÿÿ8ã›…óŽ2J$83dc52a5-ab18-48f5-be17-1513d5f72c5e

@@ -1,5 +1,6 @@
 package edu.icet.crm.controller;
 
+import edu.icet.crm.model.Customer;
 import edu.icet.crm.model.Rental;
 import edu.icet.crm.model.RentalDetails;
 import edu.icet.crm.service.RentalDetailsService;
@@ -30,5 +31,17 @@ public class RentalDetailsController {
     public RentalDetails getRentalDetailById(@PathVariable("id") Long id) {
         RentalDetails rentalDetails = rentalDetailsService.getRentalDetailById(id);
         return rentalDetails;
+    }
+
+    @PutMapping("/update")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void updateRentalDetail(@RequestBody RentalDetails rentalDetails) {
+        rentalDetailsService.updateRentalDetails(rentalDetails);
+    }
+
+    @DeleteMapping("/delete-by-id/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void deleteRentalDetail(@PathVariable("id") Long id) {
+        rentalDetailsService.deleteRentalDetail(id);
     }
 }
