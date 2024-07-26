@@ -1,0 +1,7 @@
+
+Ä
+java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹›åÅ8†İ¯ñ2J$ab765702-5532-492a-a6c8-03dc0f8e041f
+É
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(óáàıÿÿÿÿ8†İ¯ñ2J$d11523a0-1976-4ec1-9407-6e95d05f870d
+½
+java:S2159"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(ÊÓ¦Ÿ8ÔÇ”ğ2J$d42933d8-35f8-4386-9318-7b97c7e25d09
